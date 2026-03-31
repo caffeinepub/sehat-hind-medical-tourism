@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/assets/fonts/PlusJakartaSans.woff2") format("woff2");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Sehat Hind Teal Brand Palette */
+    --brand-teal: 0.5 0.1 185;
+    --brand-teal-dark: 0.26 0.06 210;
+    --brand-teal-darker: 0.22 0.05 210;
+    --brand-star: 0.82 0.17 80;
+    --brand-footer: 0.18 0.01 240;
+
+    --background: 0.95 0.01 220;
+    --foreground: 0.13 0.02 230;
+    --card: 1 0 0;
+    --card-foreground: 0.13 0.02 230;
+    --popover: 1 0 0;
+    --popover-foreground: 0.13 0.02 230;
+    --primary: 0.5 0.1 185;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.97 0.005 220;
+    --secondary-foreground: 0.13 0.02 230;
+    --muted: 0.97 0.005 220;
+    --muted-foreground: 0.45 0.02 240;
+    --accent: 0.92 0.02 185;
+    --accent-foreground: 0.26 0.06 210;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.9 0.01 220;
+    --input: 0.9 0.01 220;
+    --ring: 0.5 0.1 185;
+    --chart-1: 0.5 0.1 185;
+    --chart-2: 0.26 0.06 210;
+    --chart-3: 0.82 0.17 80;
+    --chart-4: 0.6 0.12 160;
+    --chart-5: 0.7 0.08 200;
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.145 0 0;
+    --sidebar-primary: 0.5 0.1 185;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.97 0 0;
+    --sidebar-accent-foreground: 0.205 0 0;
+    --sidebar-border: 0.922 0 0;
+    --sidebar-ring: 0.5 0.1 185;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  }
+}
